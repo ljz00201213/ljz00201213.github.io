@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href=" dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <script src="../index/js/min/jquery-2.2.0.min.js"></script>
+    <script src=" dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+    header{
+        height: 50px;
+        background:cyan;
+    }
+    nav{
+        height: 70px;
+        background:linear-gradient(lightblue,cyan);
+        margin-top: 10px;
+    }
+    section{
+        height: 800px;
+        background: greenyellow;
+        margin-top: 10px;
+    }
+    footer{
+        height: 30px;
+        background: darkgrey;
+        margin-top: 10px;
+    }
+    @keyframes example {
+        from{
+            font-size: 150%;
+            transform: rotate(0deg);
+            transform-origin: center;
+        }
+        to{
+            font-size: 200%;
+            transform: rotate(10deg);
+            transform-origin: center;
+        }
+        0%{
+            transform: rotate(0deg);
+            transform-origin: center;
+        }
+        50%{
+            transform: rotate(-10deg);
+            transform-origin: center;
+        }
+        100%{
+            transform: rotate(10deg);
+            transform-origin: center;
+        }
+    }
+    header > h3{
+        color: cyan;
+        text-shadow: blue 2px 2px 2px;
+        animation: example 1s 100000;
+    }
+    button{
+        margin-top: 10px;
+    }
+   
+</style>
+<body>
+<header class="col-sm-12">
+    <h3 class="col-sm-3">玩,玩个鸟啊</h3>
+        <button class="col-sm-2 btn btn-danger col-sm-push-6" id="signin" data-toggle="modal" data-target = "#modalsignin" >注册即送个</button>
+        <button class="col-sm-1 col-sm-push-6 btn btn-success" id="login" data-toggle="modal" data-target="#loginmodal">登录</button>
+</header>
+<nav class="col-sm-12 nav btn-group">
+    <div class="btn-group">
+        <button class="btn btn-default" data-toggle="dropdown">益智类 <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="">小鸟</a></li>
+            <li><a href="">大鸟</a></li>
+            <li><a href="">老鸟</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-default" data-toggle = "dropdown">射击类 <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="">小鸟</a></li>
+            <li><a href="">大鸟</a></li>
+            <li><a href="">老鸟</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-default" data-toggle="dropdown">角色扮演类<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="">小鸟</a></li>
+            <li><a href="">大鸟</a></li>
+            <li><a href="">老鸟</a></li>
+        </ul>
+    </div>
+    <button class=" btn btn-info navbar-right" id="personal">个人中心</button>
+    <div class="input-group col-sm-3 col-sm-push-2">
+        <input type="text " class="form-control " placeholder="请输入搜索的游戏" style="margin-top: 10px;"/>
+        <span class="input-group-btn ">
+            <button class="btn btn-default glyphicon glyphicon-search" style="margin-top: 9px;"></button>
+        </span>
+    </div>
+</nav>
+<section class="col-sm-8 col-sm-push-2" style="padding: 0;">
+    <canvas width="900px" height="800px" id="canvas"></canvas>
+</section>
+<footer class="col-sm-12"></footer>
+<div class="modal" id="modalsignin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-default close" data-dismiss ="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">关闭</span>
+                </button>
+                <h4 class="modal-title">欢迎注册</h4>
+            </div>
+            <div class="modal-body">
+                <p>请输入账号</p>
+                <input type="text" id="uname"/>
+                <p>请输入密码</p>
+                <input type="password" id="pwd"/>
+                <p id="fansile">再次确认密码</p>
+                <input type="password" id="checkpwd"/>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success"  id="btnsure">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="loginmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <p>请输入账号</p>
+                <input type="text" id="username"/>
+                <p>请输入密码</p>
+                <input type="password" id="pass"/>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" id="btnlogin">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var uname = $("#uname");
+    var pwd = $("#pwd");
+    var personal = $("#personal");
+    var username = $("#username");
+    var pass = $("#pass");
+    var checkpwd = $("#checkpwd");
+    var exspan = document.createElement("span");
+    var exmeter = document.createElement("meter");
+    var btnsure = $("#btnsure");
+    var btnlogin = $("#btnlogin");
+    exmeter.max = 10;
+    exmeter.optimum = 9;
+    exmeter.low = 3;
+    exmeter.high = 7;
+    checkpwd[0].oninput = function(){
+        if(checkpwd[0].value != pwd[0].value){
+            exspan.innerHTML = "密码不一致";
+            this.parentNode.appendChild(exspan);
+            if(checkpwd[0].value == ""){
+                this.parentNode.removeChild(exspan)
+            }
+        }else{
+            exspan.innerHTML = "正确";
+            this.parentNode.appendChild(exspan);
+        }
+
+    }
+    pwd[0].oninput = function(){
+        if(this.value.length <= 6){
+            exmeter.value = 3;
+        }else if(this.value.length > 6 && this.value.length <12){
+            exmeter.value = 7;
+        }else{
+            exmeter.value = 10;
+        }
+        this.parentNode.insertBefore(exmeter,document.getElementById("fansile"));
+        if(this.value.length == 0){
+            this.parentNode.removeChild(exmeter);
+        }
+    }
+    btnsure.click(function(){
+        if(checkpwd.val().length != 0 && pwd.val().length != 0){
+            localStorage.setItem("username" ,uname.val());
+            localStorage.setItem("password" ,pwd.val());
+            $("#signinmodal").modal("hide");
+            alert("注册成功")
+        }else{
+            alert("用户名密码不能为空")
+        }
+    })
+    btnlogin.click(function(){
+        if(username.val().length != 0 )
+        personal.html ( username.val());
+        $("#loginmodal").modal("hide");
+    })
+</script>
+<script>
+//    1.创建界面对象
+//    2.设计游戏规则
+//    3.启动游戏
+//      背景对象
+
+    var cwidth = 900;
+    var cheight = 800;
+    var index = 0;
+    var tid;
+    var n = 0;
+    var num = 1;
+    var speed = 8;
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    function Background(x ,y ,w ,h ,src ){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h ;
+        var img = new Image;
+        img.src = src;
+        this.img = img;
+        this.draw = drawBackground;
+    }
+    function drawBackground(){
+        context.drawImage(this.img ,this.x ,this.y ,this.w ,this.h);
+    }
+    var bg = new Background(0 ,0 ,cwidth ,cheight - 200 ,"images/bg.png");
+    var groung = new Background(0,cheight - 200,cwidth , 200,"images/ground.png")
+    var btn = new Background(300 ,cheight -150 ,260 ,150 ,"images/pipe.png");
+    btn.draw = function(){
+        context.drawImage(this.img ,460 ,460,260 , 150,this.x ,this.y ,this.w ,this.h);
+    }
+    var bird = new Bird(100 ,300,41 ,31,["images/0.gif" ,"images/1.gif" ,"images/2.gif"])
+    var uppide = new upPide(cwidth - 100 ,0,100,300,"images/pipe.png")
+    var downpide = new downPide(cwidth - 100 ,450 ,100 ,160,"images/pipe.png")
+    tid = setInterval(function(){
+        drawAll();
+    },100)
+    function  drawAll(){
+        context.clearRect(0 ,0 ,cwidth ,cheight);
+        bg.draw();
+        groung.draw();
+        bird.draw();
+        uppide.draw();
+        downpide.draw();
+        btn.draw();
+        cal();
+    }
+    function Bird(x ,y ,w ,h , images){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.images = images;
+        this.draw = drawBird;
+
+    }
+    function drawBird(){
+        index++;
+        if(index > 2 ){
+            index = 0;
+        }
+        var img = new Image;
+        img.src = this.images[index]
+        context.drawImage(img ,this.x ,this.y ,this.w ,this.h)
+    }
+    function upPide(x ,y ,w ,h ,src ){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        var img = new Image;
+        img.src = src;
+        this.img = img;
+        this.draw = drawUppide;
+    }
+    function drawUppide(){
+        context.drawImage(this.img, 160 ,500 ,140 ,800,this.x ,this.y,this.w ,this.h)
+    }
+    function downPide(x ,y ,w ,h ,src ){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        var img = new Image;
+        img.src = src;
+        this.img = img;
+        this.draw = drawDownpide;
+    }
+    function drawDownpide(){
+        context.drawImage(this.img ,0 ,500 ,140 ,800 ,this.x ,this.y ,this.w ,this.h)
+    }
+
+    function cal(){
+        bird.y += 10;
+        downpide.x -= speed ;
+        uppide.x -= speed  ;
+        if( (downpide.x + downpide.w) < 0){
+            n++;
+            downpide.x = cwidth -100;
+            uppide.x = cwidth - 100;
+
+            num = parseInt(Math.random()*300);
+            uppide.h = 100 +  num;
+            downpide.h = cheight - 350 -uppide.h;
+            downpide.y = 450 - (downpide.h - 160);
+        }
+        // 当小鸟碰到地面时游戏停止
+        if(bird.y + 15 >= cheight -200){
+            gameover();
+        }
+        //  当小鸟碰到管子时,游戏结束
+        if(  bird.x + bird.w - 20 >= downpide.x && bird.x <= (downpide.x + downpide.w) && bird.y +20>= downpide.y){
+            gameover();
+        }
+
+        if( bird.x +bird.w - 12>= uppide.x && bird.x <= (downpide.x + downpide.w) && bird.y - 10<= uppide.h){
+            gameover();
+        }
+
+    }
+    function gameover(){
+        clearInterval(tid);
+        context.fillStyle = "white"
+        context.font = "50px sinsum";
+        context.fillText("游戏结束,总分" + n + "分",200 ,500);
+        context.fill();
+        canvas.onclick = function(event){
+            var event = event || window.event;
+            var x = event.pageX;
+            var y = event.pageY;
+            if(x > 530  && x < 800 && y > 660 && y < 950 ) {
+                uppide.x = cwidth - 100;
+                uppide.h = 300;
+                downpide.x = cwidth - 100;
+                downpide.h = 160;
+                downpide.y = 450;
+                bird.y = 300;
+                tid = setInterval(function () {
+                    drawAll();
+                }, 100)
+            }
+        }
+    }
+    document.onkeypress = function(event){
+        var event = event || window.event
+        if(event.keyCode == 32){
+            bird.y -= 50;
+        }
+    }
+
+</script>
+</body>
+</html>

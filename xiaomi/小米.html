@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/xiaomi.css"/>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav fl">
+            <a href="javascript:;">小米商城</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">MIUI</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">米聊</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">游戏</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">多看阅读</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">云服务</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">金融</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">小米网移动版</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">问题反馈</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">Select Region</a>
+        </div>
+        <div class="topbar-cart fr">
+            <a href="#">
+                <s class="iconfont"></s>
+                <span class="shopcar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车</span>
+                <span class="message">(0)</span>
+            </a>
+        </div>
+        <div class="topbar-info fr">
+            <a href="javascript:;" id="login">登录</a>
+            <span class="sep">|</span>
+            <a href="javascript:;" id="exit">注册</a>
+            <span class="sep">|</span>
+            <a href="javascript:;">消息通知</a>
+        </div>
+    </div>
+</div>
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo fl">
+            <div class="logo">
+                <a href="#">
+                    小米官网
+                </a>
+            </div>
+        </div>
+        <div class="header-nav fl">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="javascript:;"><span>全部分类</span></a></li>
+                <li class="nav-item" id="navitem">
+                    <a href="javascript:;"><span>小米手机</span></a>
+                    <div class="item-children" id="itemchildren">
+                        <div class="container container1">
+                            <ul class="children-list">
+                                <li>
+                                    <div class="figure"><a href="#"></a></div>
+                                    <div class="title"><a href="#">小米5s</a></div>
+                                    <p>1999元起</p>
+                                </li>
+                                <li>
+                                    <div class="figure"><a href="#"></a></div>
+                                    <div class="title"><a href="#">小米5s</a></div>
+                                    <p>1999元起</p>
+                                </li>
+                                <li>
+                                    <div class="figure"><a href="#"></a></div>
+                                    <div class="title"><a href="#">小米5s</a></div>
+                                    <p>1999元起</p>
+                                </li>
+                                <li>
+                                    <div class="figure"><a href="#"></a></div>
+                                    <div class="title"><a href="#">小米5s</a></div>
+                                    <p>1999元起</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="javascript:;"><span>红米</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>平板 · 笔记本</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>电视</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>盒子 · 影音</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>路由器</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>智能硬件</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>服务</span></a></li>
+                <li class="nav-item"><a href="javascript:;"><span>社区</span></a></li>
+            </ul>
+        </div>
+        <div class="header-search fr">
+            <input type="text" class="search-text fl"/>
+            <input type="submit" value="搜索" class="search-sub"/>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="main">
+        <!--侧边导航开始-->
+        <div class="sideitems">
+            <ul class="items" id="items">
+                <li>
+                    <a href="">手机 电话卡</a><span class="fr">></span>
+                    <div class="child child-list-3">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="javascript:;" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+                            <li><a href="" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+                            <li><a href="" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+                            <li><a href="" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+                            <li><a href="" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+                            <li><a href="" class="link "><img src="images/mi5s.jpg" alt="" /><span>小米5s</span></a><a href="" class="btn ">选购</a></li>
+
+                        </ul>
+                        <ul class="child-list-col child-list-col-2">
+                            <li><a href="" class="link "><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link"><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link"><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link"><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link"><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a></li>
+                            <li><a href="" class="link"><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a></li>
+                        </ul>
+                        <ul class="child-list-col child-list-col-3">
+                            <li><a href="" class="link "><img src="images/hongmi.jpg" alt=""/><span>红米手机3s</span></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">笔记本 平板</a><span class="fr">></span>
+                    <div class="child child-list-1">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/ben.jpg" alt=""/><span>小米笔记本</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link "><img src="images/ben.jpg" alt=""/><span>小米笔记本</span></a><a href="" class="btn">选购</a></li>
+                            <li><a href="" class="link "><img src="images/ben.jpg" alt=""/><span>小米笔记本</span></a></li>
+                            <li><a href="" class="link "><img src="images/ben.jpg" alt=""/><span>小米笔记本</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">电视 盒子</a><span class="fr">></span>
+                    <div class="child child-list-3">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt="" /><span>小米电视</span></a></li>
+
+                        </ul>
+                        <ul class="child-list-col child-list-col-2">
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link"><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link"><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link"><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link"><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link"><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                        </ul>
+                        <ul class="child-list-col child-list-col-3">
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianshi.jpg" alt=""/><span>小米电视</span></a></li>
+                        </ul>
+                    </div>
+
+                <li>
+                    <a href="">路由器 智能硬件</a><span class="fr">></span>
+                    <div class="child child-list-3">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                        </ul>
+                        <ul class="child-list-col child-list-col-2">
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                        </ul>
+                        <ul class="child-list-col child-list-col-3">
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                            <li><a href="" class="link "><img src="images/jiqiren.jpg" alt=""/><span>机器人</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">移动电源 插线板 电池</a><span class="fr">></span>
+                    <div class="child child-list-2">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                        </ul>
+                        <ul class="child-list-col child-list-col-2">
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                            <li><a href="" class="link "><img src="images/dianyuan.jpg" alt=""/><span>移动电源</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">耳机 音响</a><span class="fr">></span>
+                    <div class="child child-list-2">
+                            <ul class="child-list-col child-list-col-1">
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+
+                            </ul>
+                            <ul class="child-list-col child-list-col-2">
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                                <li><a href="" class="link "><img src="images/headphone.jpg" alt=""/><span>头戴耳机</span></a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">保护套 贴膜</a><span class="fr">></span>
+                    <div class="child child-list-1">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/tiemo.jpg" alt=""/><span>贴膜</span></a></li>
+                            <li><a href="" class="link "><img src="images/tiemo.jpg" alt=""/><span>贴膜</span></a></li>
+                            <li><a href="" class="link "><img src="images/tiemo.jpg" alt=""/><span>贴膜</span></a></li>
+                            <li><a href="" class="link "><img src="images/tiemo.jpg" alt=""/><span>贴膜</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">线材 支架 存储卡</a><span class="fr">></span>
+                    <div class="child child-list-1">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/xiancai.jpg" alt=""/><span>线材</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiancai.jpg" alt=""/><span>线材</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiancai.jpg" alt=""/><span>线材</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiancai.jpg" alt=""/><span>线材</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">鞋包 服饰</a><span class="fr">></span>
+                    <div class="child child-list-1">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/xiangbao.jpg" alt=""/><span>箱包</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiangbao.jpg" alt=""/><span>箱包</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiangbao.jpg" alt=""/><span>箱包</span></a></li>
+                            <li><a href="" class="link "><img src="images/xiangbao.jpg" alt=""/><span>箱包</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">米兔 生活周边</a><span class="fr">></span>
+                    <div class="child child-list-1">
+                        <ul class="child-list-col child-list-col-1">
+                            <li><a href="" class="link "><img src="images/mitu-80.jpg" alt=""/><span>米兔玩偶</span></a></li>
+                            <li><a href="" class="link "><img src="images/mitu-80.jpg" alt=""/><span>米兔玩偶</span></a></li>
+                            <li><a href="" class="link "><img src="images/mitu-80.jpg" alt=""/><span>米兔玩偶</span></a></li>
+                            <li><a href="" class="link "><img src="images/mitu-80.jpg" alt=""/><span>米兔玩偶</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--侧边导航结束-->
+        <!--轮播图开始-->
+        <div class="advert">
+            <ul id="carousel" class="carousel">
+                <li><a href=""><img src="images/1599.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/1999.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/3499.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/100.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/799.jpg" alt=""/></a></li>
+            </ul>
+            <!--焦点-->
+            <ul class="circle" id="circle">
+                <li class="active"><a href=""></a>1</li>
+                <li><a href="javascript:;"></a>2</li>
+                <li><a href="javascript:;"></a>3</li>
+                <li><a href="javascript:;"></a>4</li>
+                <li><a href="javascript:;"></a>5</li>
+            </ul>
+            <div class="allow" id="allow">
+                <a href="javascript:;" class="left">  </a>
+                <a href="javascript:;" class="right">  </a>
+            </div>
+        </div>
+        <!--轮播图结束-->
+    </div>
+</div>
+<div class="yewu clearfix">
+    <div class="container">
+        <!--业务块-->
+        <div class="business">
+            <div class="left">
+                <ul id="ul0" >
+                    <li><a href="#"><img src="images1/jl1.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/jl2.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/jl3.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/jl4.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/jl5.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/jl6.png" alt=""/></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#"><img src="images1/a1.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/a2.png" alt=""/></a></li>
+                    <li><a href="#"><img src="images1/a3.png" alt=""/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="width: 100%;height: 40px;"></div>
+        <P style="font-size: 30px;margin-bottom: 15px;">小米明星单品</P>
+        <!--*******轮播图开始*******-->
+        <div class="box">
+            <ul id="ul1">
+                <li style="border-top: solid 1px yellow;"><a href="#"><img src="images1/1.jpg" alt=""/></a>1799</li>
+                <li style="border-top: solid 1px greenyellow;"><a href="#"><img src="images1/2.jpg" alt=""/></a>1799</li>
+                <li style="border-top: solid 1px blue;"><a href="#"><img src="images1/3.jpg" alt=""/></a>1499</li>
+                <li style="border-top: solid 1px red;"><a href="#"><img src="images1/4.jpg" alt=""/></a>3499</li>
+                <li class="ts" style="border-top: solid 1px green;"><a href="#"><img src="images1/5.jpg" alt=""/></a>999</li>
+                <li style="border-top: solid 1px orange;"><a href="#"><img src="images1/01.png" alt=""/></a>1799</li>
+                <li style="border-top: solid 1px greenyellow;"><a href="#"><img src="images1/02.png" alt=""/></a>249</li>
+                <li style="border-top: solid 1px blue;"><a href="#"><img src="images1/03.png" alt=""/></a>149</li>
+                <li style="border-top: solid 1px red;"><a href="#"><img src="images1/04.png" alt=""/></a>49</li>
+                <li class="ts" style="border-top: solid 1px green;" ><a href="#"><img src="images1/05.png" alt=""/></a>169</li>
+            </ul>
+        </div>
+        <!--**轮播图结束**-->
+    </div>
+</div>
+<div class="home clearfix">
+    <div class="container">
+        <div class="content clearfix">
+            <div class="header">
+                <h2>搭配</h2>
+                <ul id="lis">
+                    <li class="tab-active">热门</li>
+                    <li>耳机音响</li>
+                    <li>电源</li>
+                    <li>电池存储卡</li>
+                </ul>
+            </div>
+            <!--商品内容模块-->
+            <div class="capacity" id="capacity">
+                <div class="side">
+                    <ul>
+                        <li><a href=""><img src="images/rj.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/jn.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <div class="product" id="product">
+                    <ul class="items1 items-active" id="items1">
+                        <li><div class="figure"><a class="imgview" href="javascript:;"><img src="" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/pms.jpg" alt=""/></a></div><a href=""><h3>米兔智能故事机</h3></a><p class="price">199元</p></li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/more.png" alt="" style="width: 48px;height: 48px;"/></a></div><a href=""><h3>浏览更多</h3></a><p class="desc">热门</p></li>
+                    </ul>
+                    <ul class="items2" id="items2">
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/yinse.jpg" alt=""/></a></div><a href=""><h3>小米圈铁耳机</h3></a><p class="price">199元</p></li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/more.png" alt="" style="width: 48px;height: 48px;"/></a></div><a href=""><h3>浏览更多</h3></a><p class="desc">耳机音响</p></li>
+                    </ul>
+                    <ul class="items3" id="items3">
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/yidong.jpg" alt=""/></a></div><a href=""><h3>移动电源 5000mAh</h3></a><p class="price">49元</p></li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/more.png" alt="" style="width: 48px;height: 48px;"/></a></div><a href=""><h3>浏览更多</h3></a><p class="desc">移动电源</p></li>
+                    </ul>
+                    <ul class="items4" id="items4">
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p><p class="desc">1.8万人评价</p>
+                            <div class="review">
+                                <a href="">
+                                    <span>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小...</span>
+                                    <span class="author"> 来自于 田密 的评价 </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/SanDisk.jpg" alt=""/></a></div><a href=""><h3>SanDisk 16GB存储卡（Class4）</h3></a><p class="price">26.9元</p></li>
+                        <li class="items-s"><div class="figure"><a href=""><img src="images/more.png" alt="" style="width: 48px;height: 48px;"/></a></div><a href=""><h3>浏览更多</h3></a><p class="desc">存储卡</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="box-hd">
+            <h2>内容</h2>
+        </div>
+        <div class="box-bd">
+            <ul class="content-list">
+                <li class="content-item" style="margin: 0;" id="contentitem">
+                    <h2 class="title">图书</h2>
+                    <div class="content-text" id="contenttext">
+                        <ul id="list">
+                            <li>
+                                <h4 class="name"><a href="#">从你的全世界路过</a></h4>
+                                <p class="desc"><a href="#">《从你的全世界路过》同名电影暖心上映</a></p>
+                                <p class="price"><a href="#"></a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">特价专区</a></h4>
+                                <p class="desc"><a href="#">精选畅销好书,特价促销,天天更新,天天特价</a></p>
+                                <p class="price"><a href="#">限时优惠</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-pagers">
+                        <ul id="pagers">
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="arrow" id="arrow">
+                        <ul>
+                            <li class="arrow-left" id="arrowleft"><</li>
+                            <li class="arrow-right" id="arrowright">></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="content-item">
+                    <h2 class="title">图书</h2>
+                    <div class="content-text">
+                        <ul>
+                            <li>
+                                <h4 class="name"><a href="#">从你的全世界路过</a></h4>
+                                <p class="desc"><a href="#">《从你的全世界路过》同名电影暖心上映</a></p>
+                                <p class="price"><a href="#"></a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">特价专区</a></h4>
+                                <p class="desc"><a href="#">精选畅销好书,特价促销,天天更新,天天特价</a></p>
+                                <p class="price"><a href="#">限时优惠</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-pagers">
+                        <ul>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="arrow">
+                        <ul>
+                            <li class="arrow-left"><</li>
+                            <li class="arrow-right">></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content-item">
+                    <h2 class="title">图书</h2>
+                    <div class="content-text">
+                        <ul>
+                            <li>
+                                <h4 class="name"><a href="#">从你的全世界路过</a></h4>
+                                <p class="desc"><a href="#">《从你的全世界路过》同名电影暖心上映</a></p>
+                                <p class="price"><a href="#"></a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">特价专区</a></h4>
+                                <p class="desc"><a href="#">精选畅销好书,特价促销,天天更新,天天特价</a></p>
+                                <p class="price"><a href="#">限时优惠</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-pagers">
+                        <ul>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="arrow">
+                        <ul>
+                            <li class="arrow-left"><</li>
+                            <li class="arrow-right">></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content-item">
+                    <h2 class="title">图书</h2>
+                    <div class="content-text">
+                        <ul>
+                            <li>
+                                <h4 class="name"><a href="#">从你的全世界路过</a></h4>
+                                <p class="desc"><a href="#">《从你的全世界路过》同名电影暖心上映</a></p>
+                                <p class="price"><a href="#"></a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">特价专区</a></h4>
+                                <p class="desc"><a href="#">精选畅销好书,特价促销,天天更新,天天特价</a></p>
+                                <p class="price"><a href="#">限时优惠</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                            <li>
+                                <h4 class="name"><a href="#">杂志专区</a></h4>
+                                <p class="desc"><a href="#">纸媒杂志+互联网杂志,你想看的这都有</a></p>
+                                <p class="price"><a href="#">同步新刊上线</a></p>
+                                <div class="figure"><a href="#"><img src="images/f40de57a-bf50-4f60-9080-31bbf465a5d5.jpg" alt=""/></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-pagers">
+                        <ul>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                            <li><a href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                    <div class="arrow">
+                        <ul>
+                            <li class="arrow-left"><</li>
+                            <li class="arrow-right">></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="mask" id="mask">
+    <div class="wrap" id="wrap">
+        <span id="close">x</span>
+        <div id="showlogin">
+            <div class="logoheader">
+                <div class="logo">
+                    <img src="images/logo.png" alt=""/>
+                </div>
+                <h3>小米账号登录</h3>
+            </div>
+            <div class="login">
+                <form action="">
+                    <input type="text" placeholder="邮箱/手机号码/小米帐号" id="username"/>
+                    <input type="password" placeholder="密码" id="password"/>
+                    <input type="button" value="立即登录" id="btn"/>
+                    <input type="button" value="注册" id="btn1"/>
+                </form>
+                <div class="other">
+                    <fieldset>
+                        <legend>其他方式登录</legend>
+                    </fieldset>
+                    <div class="mode">
+                        <ul>
+                            <li style="margin-left: 15px"><a href=""><img src="images/qq%20.png" alt=""/></a></li>
+                            <li><a href=""><img src="images/weibo.png" alt=""/></a></li>
+                            <li><a href=""><img src="images/zhifubao.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout" id="layout">
+            <div class="logo"><img src="images/logo.png" alt=""/></div>
+            <div class="title">注册小米账户</div>
+            <div class="content">
+                <form action="php/login.php" method="post" target="myframe">
+                    <div><input type="text" class="username" id="user" name="username"/></div>
+                    <div class="word1" id="word1"></div>
+                    <div><input type="text" class="password" id="pass" name="password"/></div>
+                    <div class="word2" id="word2"></div>
+                    <div><input type="button" class="login" value="立即注册" id="sub"/></div>
+                </form>
+            </div>
+            <div class="showInfo" id="showInfo"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/xiaomi.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+</html>

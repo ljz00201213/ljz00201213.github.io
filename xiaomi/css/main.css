@@ -1,0 +1,543 @@
+@charset "UTF-8";
+.container{
+    width: 1226px;
+
+    margin: 0 auto;
+
+}
+.main{
+    height: 460px;
+    position: relative;
+}
+.container .sideitems{
+    width: 235px;
+    height: 420px;
+    background-color: rgba(91, 85, 90 ,0.8);
+    padding: 20px 0;
+    position:absolute;
+    z-index: 100;
+    line-height: 43px;
+}
+.container .sideitems .items >li{
+    color: white;
+    width: 180px;
+    height: 43px;
+    padding-left: 30px;
+    padding-right: 25px;
+
+}
+.actives{
+    background: #ff6700;
+}
+/*设置隐藏导航的样式*/
+.items .child{
+    display:none ;
+    height: 458px;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.items .child .child-list-col li span:hover{
+    color: #ff6700;
+}
+.child-list-1{
+    width: 265px;
+}
+.child-list-2{
+    width: 530px;
+}
+.child-list-3{
+    width: 795px;
+}
+.items .child .child-list-col{
+    width: 265px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-right:none ;
+    border-left:none ;
+    float: left;
+    height: 458px;
+
+}
+.items .child .child-list-col>li{
+    width: 265px;
+    height: 76px;
+}
+.items .child .child-list-col .link{
+    display: block;
+    padding: 18px 20px;
+    width: 130px;
+    float: left;
+}
+.items .child .child-list-col .link>img{
+    width: 40px;
+    height: 40px;
+    padding-right: 12px;
+}
+.items .child .child-list-col .link>span{
+    color: #000000;
+}
+.items .child .child-list-col .btn{
+    display: inline-block;
+    border: 1px solid #ff7818;
+    width: 58px;
+    height: 22px;
+    background: #ffffff;
+    line-height: 22px;
+    color: #ff7818;
+    text-align: center;
+    position: relative;
+    right: 10px;
+    top: 26px;
+    float: right;
+    transition: .5s;
+}
+.items .child .child-list-col .btn:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.container .main .advert .carousel{
+    width: 1226px;
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.container .main .advert .carousel li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:all .5s linear;
+}
+
+.container .main .advert .allow .left ,.container .main .advert .allow .right{
+    display: block;
+    z-index: 50;
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+}
+.container .main .advert .allow .left{
+    background: url(../images/icon.png)  no-repeat -84px 50%;
+    left: 234px;
+ }
+.container .main .advert .allow .right{
+    background: url(../images/icon.png) no-repeat -125px 50%;
+    right: 0;
+}
+.container .main .advert .allow .left:hover{
+    background-position: 0px 50%;
+}
+.container .main .advert .allow .right:hover {
+    background-position: -42px 50%;
+}
+.container .main .advert .circle{
+    position: absolute;
+    z-index: 101;
+    bottom: 25px;
+    right: 35px;
+}
+.container .main .advert .circle li{
+    cursor: pointer;
+    float: left;
+    width: 6px;
+    height: 6px;
+    text-indent: -9999px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+.active{
+    background: rgba(255, 90, 129, 0.4);
+    border-color: rgba(0,0,0,0.4);
+}
+.home{
+    padding-top: 60px;
+    background: #f5f5f5;
+}
+
+
+.home .header{
+    height: 58px;
+
+}
+.home  .header h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    float: left;
+}
+.home  .header ul{
+    float: right;
+    font-size: 16px;
+    line-height: 18px;
+    color: #424242;
+}
+.home  .header ul li{
+    border-bottom: 2px solid transparent;
+    transition: border-color .5s;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.home .capacity .side{
+    float: left;
+}
+.home .capacity .side li{
+    margin-bottom: 10px;
+}
+.home .capacity .side img{
+    width: 234px;
+    height: 300px;
+}
+.items1,.items2,.items3,.items4{
+    display: none;
+
+}
+.items-active{
+    display: block;
+}
+.home .capacity .product{
+    float: left;
+}
+.home .capacity .product ul{
+    width: 992px;
+    height: 624px;
+
+}
+.home .capacity .product li{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    transition: all .2s linear;
+}
+.li-active{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translate3d(0, -5px, 0);
+}
+.home .capacity .product li .figure{
+    margin: 0px 37px 18px 37px;
+}
+.home .capacity .product li .figure img{
+    width: 160px;
+    height: 160px;
+}
+.home .capacity .product li h3 {
+    margin: 0 10px 2px;
+    color: black;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.home .capacity .product li .desc{
+    margin:  10px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #b0b0b0;
+}
+.home .capacity .product li .price{
+    text-align: center;
+    color: #ff6700;
+}
+.home .capacity .product li .review{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;
+    transition: all .2s linear
+}
+.home .capacity .product li .review .author{
+    color: rgba(255,255,255,0.6);
+}
+
+.home .capacity .product li .review a{
+    display: block;
+    padding: 8px 30px;
+}
+.home .capacity .product li.items-s{
+    position: relative;
+    height: 93px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.home .capacity .product li.items-s img{
+    width: 80px;
+    height: 80px;
+}
+.home .capacity .product li.items-s .figure{
+    position: absolute;
+    margin: 0;
+    right: 20px;
+    top: 32px;
+    width: 80px;
+    height: 80px;
+}
+.home .capacity .product li.items-s h3{
+    margin: -10px 110px 5px 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+.home .capacity .product li.items-s .price{
+    margin: 0px 110px 0px 30px;
+    text-align: left;
+}
+.home .capacity .product li.items-s .desc{
+    margin: 0px 110px 0px 30px;
+
+    text-align: left;
+
+}
+.home  .header .tab-active{
+   color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+/*模块视图开始*/
+.mask{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background:rgba(0 ,0 ,0 ,.5);
+
+}
+.mask .wrap{
+    background-color: #fff;
+    width: 854px;
+    margin: 20px auto ;
+    position: absolute;
+    height: 630px;
+    left: 247px;
+    top: -650px;
+    opacity: 0;
+}
+.mask .wrap span{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 20px;
+}
+.mask .wrap .logoheader{
+    padding: 50px 0 22px;
+}
+.mask .wrap .logo{
+    height: 50px;
+    text-align: center;
+}
+.mask .wrap .logoheader h3{
+    font-size: 30px;
+    color: #424242;
+    font-weight: normal;
+    padding-top: 22px;
+    text-align: center;
+}
+.mask .wrap .login{
+    width: 358px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.mask .wrap input{
+    padding: 13px 16px 13px 14px;
+    margin-bottom: 14px;
+    width: 326px;
+    height: 22px;
+    border: 1px solid #e0e0e0;
+}
+.mask .wrap input[type="button"]{
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    width: 358px;
+    height: 50px;
+    background: #ff6700;
+}
+.mask .wrap .other fieldset{
+    border-top: 1px solid #b0b0b0;
+
+}
+.mask .wrap .other legend{
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+.mask .wrap .other .mode ul{
+    width: 180px;
+    height: 30px;
+    margin: 10px auto;
+
+}
+.mask .wrap .other .mode li{
+    margin-left: 30px;
+
+    float: left;
+}
+.mask .wrap .other .mode img{
+    width: 30px;
+    height: 30px;
+}
+.wrap .layout {
+    display: none;
+}
+.wrap .layout .logo{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.wrap .layout .title{
+    font-size: 30px;
+    font-family: "Microsoft yahei";
+    line-height: 1.5;
+    font-weight: 100;
+    text-align: center;
+    color: #333333;
+}
+.wrap .layout .content{
+    text-align: center;
+    padding-top: 30px;
+}
+.wrap .layout .content input{
+    height: 20px;
+    width: 310px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 10px 10px 5px;
+}
+.wrap .layout .content .word1{
+    display: none;
+    line-height: 20px;
+    width: 150px;
+    padding: 0 0 10px 10px;
+    font-family: "Microsoft yahei";
+    color: rgb(255,103,0);
+    margin: 0 220px;
+}
+.wrap .layout .content .word2{
+    display: none;
+    line-height: 20px;
+    width: 200px;
+    padding: 0 0 10px 14px;
+    font-family: "Microsoft yahei";
+    color: rgb(255,103,0);
+    margin: 0 260px;
+    /*background: url("images/alert.png") no-repeat 0px 3px;*/
+}
+
+
+.wrap .layout .content .login{
+    height: 40px;
+    width: 334px;
+    padding: 0;
+    background-color: rgb(255,103,0);
+    border: 0;
+    color: #ffffff;
+    font-family: "Microsoft yahei";
+}
+
+.wrap .layout .showInfo{
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    font-family: "Microsoft yahei";
+    background-color: rgb(249,249,249);
+}
+
+
+
+.yewu{
+    margin-top: 10px;;
+}
+.business{
+    width: 100%;
+    height: 170px;
+}
+.left{
+    background-color: white;
+    width: 234px;
+    height: 170px;
+    float: left;
+}
+.left ul{
+    width: 234px;
+    /*list-style: none;*/
+}
+.left ul li{
+    width: 78px;
+    height: 85px;
+    float: right;
+}
+.right{
+    width: 992px;
+    height: 170px;
+    float: right;
+
+}
+.right ul{
+    width: 992px;
+    height: 170px;
+}
+.right ul li{
+    width: 316px;
+    height: 170px;
+    margin-left: 14px;
+    float: left;
+}
+/*轮播图开始*/
+.box{
+    width: 1226px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    /*background-color: ;*/
+}
+
+
+.box ul{
+    width: 2550px;
+    list-style: none;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.box ul li{
+    float: left;
+    width: 234px;
+    height: 320px;
+    margin-right: 14px;
+    background-color: #FAFAF9;
+    /*padding-bottom: 90px;*/
+    text-align: center;
+    color: red;
+}
+li.ts{
+    margin: 0;
+}
+

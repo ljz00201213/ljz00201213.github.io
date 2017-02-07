@@ -1,0 +1,59 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>-->
+<h2 class="page-header">{{title}}</h2>
+<div class="list-group">
+    <a class="list-group-item" href="#/detail/{{ movie.id }}"  ng-repeat="movie in movies" >
+        <div class="media">
+            <span class="badge pull-right">{{movie.rating.average}}</span>
+            <div class="media-left">
+                <img class="media-object img-thumbnail" src="{{movie.images.small}}" alt="{{movie.title}}"/>
+            </div>
+            <div class="media-body">
+                <h1>{{move.title}}</h1>
+                <p>
+                    导演:
+                    <span ng-repeat="director in movie.directors">{{director.name}}{{$last?"" : "、"}}</span>
+                </p>
+                <p>
+                    类型:
+                    <span>{{movie.genres.join("、")}}</span>
+                </p>
+            </div>
+        </div>
+    </a>
+</div>
+<uib-pager total-items="total" items-per-page="size"
+           align="false" ng-model="currentPage">
+
+</uib-pager>
+<div>
+    <p>
+        共: {{total || 1000}}条
+    </p>
+</div>
+<div class="modal show fade" ng-class="{in:loading}" ng-hide="!loading">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button  class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">正在加载</h4>
+            </div>
+            <div class="modal-body">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success  progress-bar-striped active" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+</body>
+</html>-->

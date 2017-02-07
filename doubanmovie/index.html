@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣电影</title>
+    <meta name="viewport" content="width = device-width , initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body ng-app="app">
+<!--导航栏-->
+<div class="nav navbar-inverse navbar-fixed-top">
+    <a href="#">
+        <div class="navbar-brand">
+            豆瓣首页
+        </div>
+    </a>
+    <div class="navbar-header">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!--后期添加一个绑定事件-->
+                <li><a href="#">电影详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <!--下盒子-->
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 siderbar hidden-xs">
+                <ul class="nav nav-pills nav-stacked" >
+                    <li class="active" ><a href="#/in_theaters" select-link="">正在热映</a></li>
+                    <li><a href="#/coming_soon" select-link="">即将上映</a></li>
+                    <li><a href="#/top250" select-link="">top250</a></li>
+                </ul>
+                <br/>
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="请输入想要搜索的电影"/>
+                    <span class="input-group-addon">搜索</span>
+                </div>
+
+            </div>
+        </div>
+        <!--电影列表-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view="">
+
+        </div>
+</div>
+
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular-route/angular-route.min.js"></script>
+<script src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="app.js"></script>
+<script src="movie/movie-detail.js"></script>
+<script src="movie/movie-list.js"></script>
+
+</body>
+</html>

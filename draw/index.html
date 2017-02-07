@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            position: relative;
+        }
+        .father{
+            position:absolute;
+            left: 0;
+            top: 0;
+            width: 450px;
+            height: 450px;
+
+        }
+        .father .img{
+            transform: rotate(-20deg);
+            transform-origin: 50% 50%;
+
+        }
+        .son{
+            position: absolute;
+            top: 90px;
+            left: 138px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="father">
+        <img class="img" src="image/turntable.png" alt=""/>
+        
+    </div>
+    <div class="son">
+        <img src="image/pointer.png" alt=""/>
+    </div>
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        var temp;
+        $(".son").click(function(){
+           clearTimeout(temp)
+            rotate();
+        })
+        function rotate(){
+            var tips = Math.random()*10;
+            
+            var pointer ;
+            if ( 0 < tips && tips<= 0.2) {
+                pointer = 1;
+            }else if (0.2 < tips && tips <= 1) {
+                pointer = 2;
+            }else if (1 < tips && tips <= 2.5) {
+                pointer = 3;
+            }else if (2.5 < tips && tips <= 5) {
+                pointer = 4;
+            }else if (5 < tips && tips <= 6) {
+                pointer = 5;
+            }else if (6 < tips && tips <= 7) {
+                pointer = 6;
+            }else{
+                pointer = 0;
+            }
+            console.log(pointer)
+            $(".father").css({
+                transform: "rotate("+( 360*(pointer+2)+51*pointer)+"deg)",
+                transition: "all",
+                transitionDuration: (pointer+2)+"s",
+            })
+           
+            temp = setTimeout(function(){
+                switch (pointer){
+                    case 0 :
+                        alert("未中奖");
+                        break;
+                    case 1 :
+                        alert("免单4999元");
+                        break;
+                    case 2 :
+                        alert("免单50");
+                        break;
+                    case 3 :
+                        alert("免单10元");
+                        break;
+                    case 4 :
+                        alert("免单5元");
+                        break;
+                    case 5 :
+                        alert("免服务费");
+                        break;
+                    case 6 :
+                        alert("提高额度");
+                        break;
+
+                }
+                $(".father").css({
+                    transform: "rotate(0deg)",
+                    transition: "null",
+                })
+            },(pointer + 2)*1000)
+        }
+    })
+</script>
+</html>
