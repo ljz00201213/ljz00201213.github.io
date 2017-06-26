@@ -118,19 +118,19 @@ var beyondtop;
     JConfig.WIDTH = 1080;
     JConfig.HEIGHT = 720;
     // 键盘
-    // static BACK = 8;
-    // static ENTER = 13;
-    // static LEFT = 37;
-    // static RIGHT = 39;
-    // static UP = 38;
-    // static DOWN = 40;
+    static BACK = 8;
+    static ENTER = 13;
+    static LEFT = 37;
+    static RIGHT = 39;
+    static UP = 38;
+    static DOWN = 40;
     // 机顶盒
-    JConfig.BACK = 4;
-    JConfig.ENTER = 23;
-    JConfig.LEFT = 21;
-    JConfig.RIGHT = 22;
-    JConfig.UP = 19;
-    JConfig.DOWN = 20;
+//     JConfig.BACK = 4;
+//     JConfig.ENTER = 23;
+//     JConfig.LEFT = 21;
+//     JConfig.RIGHT = 22;
+//     JConfig.UP = 19;
+//     JConfig.DOWN = 20;
     /**
     * 设置存贮用户信息
     */
